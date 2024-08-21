@@ -1,0 +1,47 @@
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggested {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+} 
+
+.categories {
+    display: flex;
+    flex-direction: row;
+}
+
+.category-box a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.levels {
+    display: flex;
+    flex-direction: row;
+}
+
+.level-box {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
