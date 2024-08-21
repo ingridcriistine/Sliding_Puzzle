@@ -16,6 +16,15 @@ nav {
 
 .nav-title {
     font-size: 30px;
+    font-weight: 800;
+    background: linear-gradient(to right,#640064, #9b0d9b, #a101a1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rules a {
+    font-weight: 800;
+    color: #640064;
 }
 
 nav a {
