@@ -35,6 +35,12 @@ footer {
     align-items: center;
 }
 
+.category-box-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .levels {
     display: flex;
     flex-direction: row;

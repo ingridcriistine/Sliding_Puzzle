@@ -17,7 +17,7 @@ nav {
 .nav-title {
     font-size: 30px;
     font-weight: 800;
-    background: linear-gradient(to right,#640064, #9b0d9b, #a101a1);
+    background: linear-gradient(to right, #9b0d9b, #a101a1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -88,6 +88,12 @@ section {
     height: 50px;
     border-radius: 10px;
     margin: 30px 30px 30px 50px;
+}
+
+.category-box-img img {
+    width: 80%;
+    border-radius: 100%;
+    background-color: white;
 }
 
 
