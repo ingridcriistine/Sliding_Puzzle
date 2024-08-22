@@ -51,3 +51,9 @@ footer {
     justify-content:center;
     align-items: center;
 }
+
+.box-puzzle {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}

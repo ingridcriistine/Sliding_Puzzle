@@ -98,5 +98,37 @@ section {
 
 
 /* ---CATEGORIES-------------------------------------------------------------------------- */
+
+
+
 /* ---LEVELS-------------------------------------------------------------------------- */
-/* ---GAMES-------------------------------------------------------------------------- */
+
+/* ---PUZZLES-------------------------------------------------------------------------- */
+
+.box-puzzle {
+    width: 710px;
+    height: 720px;
+    border-radius: 10px;
+    position: relative;
+	margin: 50px auto;
+	background-color: white;
+	border: outset;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.peca {
+	width: 220px;
+	height: 220px;
+	margin: 5px 10px 5px 10px;
+	position: absolute;
+	transition: left 0.5s, top 0.5s;
+}
+
+.peca img {
+	width: 100%;
+}
+
+.peca:hover {
+	border: inset;
+	border-radius: 10px;
+}
