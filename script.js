@@ -1,7 +1,7 @@
 (function() {
 
     var pecas = [];
-    var answer = []
+    var answer = [];
     
     // inicializa os elementos
     function init() {
@@ -21,6 +21,7 @@
     function render() {
 
         for(var i in pecas) {
+
             var peca = pecas[i];
 
             if(peca) {
@@ -33,7 +34,13 @@
 
     }
 
-    function
+    function start () {
+
+    }
+
+    function end() {
+
+    }
 
 }
 
