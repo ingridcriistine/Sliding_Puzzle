@@ -1,7 +1,13 @@
-(function() {
+// (function() {
 
     var pecas = [];
     var answer = [];
+
+    // var telaInicio = document.querySelector("#tela-inicio");
+	// 	telaInicio.addEventListener("click", comecaJogo, false);
+
+	// var telaFinal = document.querySelector("#tela-final");
+
     
     // inicializa os elementos
     function init() {
@@ -10,10 +16,10 @@
             peca.addEventListener("click", movePeca);
             pecas.push(peca);
         }
-
+        
         pecas.push(null); //peça em branco para o movimento
         answer = pecas;
-
+        
         render();
     }
 
@@ -34,14 +40,10 @@
 				} else if(i < 6) {
 					peca.style.top = "245px";
 				} else {
-					peca.style.top = "475px"
+					peca.style.top = "475px";
 				}
 			}
         }
-    }
-
-    function movePeca() {
-
     }
 
     function randomGame(model) {
@@ -55,7 +57,8 @@
 
             while(newModel.length < model.length) {
                 var i = Math.floor(Math.random() * model.length) //número aleatório entre 0 e 8
-            
+                console.log(i);
+
                 // verifica se a posição está livre
                 if(newModel.indexOf(model[i] < 0)) {
                     newModel.push(model[i]);
@@ -65,9 +68,25 @@
             count++;
             console.log(count); //verifica quantos jogos foram criados até ter uma ordem válida
         
-        } while(!verify(newModel));
+        } while(!verifyGame(newModel));
 
         return newModel;
+    }
+
+    function verifyGame(array) {
+        console.log(array);
+        var inversoes = 0;
+        var elements = array.length();
+
+        for(var i = 0; i < elements - 1; i++) {
+            for(var j = i + 1; j < elements; j++) {
+                if(array[i] && array[j] && array[i].dataset.value < array[j].dataset.value) {
+                    inversoes++;
+                }
+            }
+        }
+
+        return inversoes % 2 === 0; //se for par, o jogo é válido
     }
 
     function verify() {
@@ -83,15 +102,19 @@
         return true;
     }
 
-    function start () {
+    function movePeca() {
 
+    }
+
+    function start () {
+        pecas = randomGame(pecas);
+        render();
     }
 
     function end() {
 
     }
 
-
     init();
 
-} ());
+// } ());
