@@ -60,7 +60,7 @@
                 console.log(i);
 
                 // verifica se a posição está livre
-                if(newModel.indexOf(model[i] < 0)) {
+                if(newModel.indexOf(model[i]) === -1) {
                     newModel.push(model[i]);
                 }
             }
@@ -76,7 +76,7 @@
     function verifyGame(array) {
         console.log(array);
         var inversoes = 0;
-        var elements = array.length();
+        var elements = array.length;
 
         for(var i = 0; i < elements - 1; i++) {
             for(var j = i + 1; j < elements; j++) {
@@ -103,7 +103,30 @@
     }
 
     function movePeca() {
+        var index = pecas.indexOf(this);
 
+        //mover para a esquerda
+        if(index % 3 != 0) {
+            if(pecas[index - 1] === null) {
+                pecas[index - 1] = this;
+                peca[index] = null;   
+            }
+        }
+
+        //mover para a direita
+        if(index % 3 != 2) {
+
+        }
+
+        //mover para cima
+        if(index > 2) {
+
+        }
+
+        //mover para baixo
+        if(index < 6) {
+
+        }
     }
 
     function start () {
